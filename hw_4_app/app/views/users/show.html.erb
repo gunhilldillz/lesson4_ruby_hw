@@ -1,0 +1,6 @@
+<h1> This is the Show Action Page Via the Users Controller (./users) </h1>
+
+<h3> The following information exists in the database for User number: <%= params[:id] %></h3>
+
+<%= render "user", user: @user %>
+<%= render "post", user: @user %>

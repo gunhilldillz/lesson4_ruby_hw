@@ -1,0 +1,12 @@
+<h3>Posts:</h3>
+<%  user.posts.each do |post| %>
+<b>Title:</b><br>
+<%= post.title %><br>
+<b>Body</b><br>
+<%= post.body %>
+<br>
+<b>Created:</b><br>
+<%= user.created_at.strftime("%B %d, %Y") %>
+<br><br>
+<% end %>
+
