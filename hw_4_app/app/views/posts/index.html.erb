@@ -1,0 +1,10 @@
+<h1>POSTS</h1>
+<h2>For User_id: <%=params[:user_id]%> </h2>
+
+<hr>
+
+<% @users.posts.each do |post| %>
+	
+	<%= render "post", post: post %>
+	
+<% end %>
